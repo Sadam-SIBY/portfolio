@@ -115,7 +115,7 @@ textarea {
 
 .heading-sec__main--lt::after {
     content: '';
-    background: #6b2a01 !important
+    background: #192a56 !important
 }
 
 .heading-sec__main::after {
@@ -124,7 +124,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #6b2a01;
+    background: #192a56;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px
@@ -170,7 +170,7 @@ textarea {
 }
 
 .btn {
-    background: #6b2a01;
+    background: #192a56;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -196,14 +196,14 @@ textarea {
 }
 
 .btn--theme {
-    background: #6b2a01;
+    background: #192a56;
     color: #fff
 }
 
 .btn--theme-inv {
     color: #111;
     background: #fff;
-    border: 2px solid #6b2a01;
+    border: 2px solid #192a56;
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px)
 }
@@ -238,7 +238,7 @@ textarea {
 
 .home-hero {
     color: #fff;
-    background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../../assets/svg/common-bg.svg);
+    background: linear-gradient(to right, rgba(39, 46, 243, 0.8), rgba(156, 156, 244, 0.8)),url(../../assets/svg/common-bg.svg);
     background-position: center;
     height: 100vh;
     min-height: 80rem;
@@ -382,7 +382,7 @@ textarea {
 .about__content-details-para a {
     text-decoration: underline;
     font-weight: 700;
-    color: #6b2a01;
+    color: #192a56;
     margin: 0 3px
 }
 
@@ -743,7 +743,7 @@ textarea {
 }
 
 .header__logo-container:hover {
-    color: #6b2a01
+    color: #192a56
 }
 
 .header__logo-img-cont {
@@ -752,7 +752,7 @@ textarea {
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: #6b2a01
+    background: #192a56
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -802,7 +802,7 @@ textarea {
 }
 
 .header__link:hover {
-    color: #6b2a01
+    color:#192a56
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -872,7 +872,7 @@ textarea {
 }
 
 .header__sm-menu-link a:hover {
-    color: #6b2a01
+    color: #192a56
 }
 
 .header__sm-menu-link:first-child a {
@@ -884,7 +884,7 @@ textarea {
 }
 
 .main-footer {
-    background: #6b2a01;
+    background: #192a56;
     color: #fff
 }
 
@@ -979,10 +979,10 @@ textarea {
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.6rem;
-    background: rgba(152, 151, 151, 0.2);
+    background: #8A8CF6;
     border-radius: 5px;
     font-weight: 600;
-    color: #666
+    color: #192a56
 }
 
 .mouse {
