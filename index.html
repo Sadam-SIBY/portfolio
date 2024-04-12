@@ -128,7 +128,7 @@
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="assets/images/profil.png"
+              src="assets/images/photo.jpg"
               alt="Sadam SIBY Logo Image"
               class="header__logo-img"
             />
@@ -141,13 +141,13 @@
               <a href="./" class="header__link"> Accueil</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./#a-propos" class="header__link">Apropos de moi </a>
+              <a href="./#a-propos" class="header__link">À propos de moi </a>
             </li>
             <li class="header__link-wrapper">
               <a href="./#projets" class="header__link"> Projets </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./#mecontacter" class="header__link"> Me contacter </a>
+              <a href="./#contact" class="header__link"> Me contacter </a>
             </li>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -172,15 +172,15 @@
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./#a-propos"> Apropos de moi </a>
+              <a href="./#a-propos"> À propos de moi </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./#projects"> Projets </a>
+              <a href="./#projets"> Projets </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./#mecontacter"> Me contacter </a>
+              <a href="./#contact"> Me contacter </a>
             </li>
           </ul>
         </div>
@@ -225,7 +225,7 @@
           </div> -->
         </div>
         <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projets</a>
+          <a href="./#projets" class="btn btn--bg">Projets</a>
         </div>
       </div>
       
@@ -233,20 +233,20 @@
         <div class="mouse"></div>
       </div>
     </section>
-    <section id="about" class="about sec-pad">
+    <section id="a-propos" class="about sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main">A propos de moi</span>
-          <span class="heading-sec__sub">
+          <!-- <span class="heading-sec__sub">
             <strong>Une vue sur  : </strong>Qui je suis ? - Ce avec quoi je peux travailler ? Ce dont je suis capable ?
-          </span>
+          </span> -->
         </h2>
         <div class="about__content">
           <div class="about__content-main">
             <h3 class="about__content-title">Me connaître plus</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
-                Issu d'une reconversion professionnelle, je progresse dans le <strong>developpement back-end spécialité "Symfony"</strong>.               
+                Issu d'une reconversion professionnelle, je progresse dans le <strong>developpement back-end </strong>spécialité <strong>Symfony</strong>.               
                 Je suis dans une démarche d'apprentissage constant pour apprendre de nouveaux languages et acquérir de la 
                 rigueur et de la méthode de travail.
               </p>
@@ -279,13 +279,12 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="projects sec-pad">
+    <section id="projets" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Projets</span>
           <span class="heading-sec__sub">
-            Here you will find some of the personal and clients projects that I
-            created with each project containing its own case study
+            Les différents projets sur lesquels j'ai travaillé : 
           </span>
         </h2>
 
@@ -293,114 +292,118 @@
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
-                src="./assets/jpeg/dopefolio.jpeg"
+                src="./assets/images/oboulot.png"
                 alt="Software Screenshot"
                 class="projects__row-img"
                 loading="lazy"
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Dopefolio</h3>
+              <h3 class="projects__row-content-title">O'Boulot</h3>
               <p class="projects__row-content-desc">
-                Dopefolio is a successful Open-Source project that I created
-                which have been featured on some of the biggest tech sites like
-                CSS-Tricks, Hostinger, etc & used by thousands of developers
-                globally
+                O'Boulot est un projet de type éducatif permettant à des enseignants de proposer des exercices et corrigés à des élèves de sa classe.
+              Cette application a été pensés et réalisés en équipe dans le cadre de ma formation auprès de l'école O'Clock.
               </p>
-              <a class='btn btn--med btn--theme dynamicBgClr' href='/project-1' target='_blank'>Case Study</a
+              <a class='btn btn--med btn--theme dynamicBgClr' href='/project-1' target='_blank'>Voir le projet</a
+              >
+            </div>
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="assets/images/AlloFlix.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div> 
+           <div class="projects__row-content">
+              <h3 class="projects__row-content-title">AlloFlix </h3>
+              <p class="projects__row-content-desc">
+              Site qui répertorie les nouveautés en termes de films et séries. Les films et séries sont classés par genre et permet 
+              à l'utilisateur de rajouter les films et séries qui l'intéresse dans sa liste de favoris, de leur donner une note et 
+              d'émettre également des critiques sur ces films et séries. Le site a été avec le framework Symfony.
+              </p>
+              <a class='btn btn--med btn--theme dynamicBgClr' href='/project-4' target='_blank'>Voir le projet</a
+              >
+            </div> 
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/images/trip.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+
+            
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Trip Odvisor</h3>
+              <p class="projects__row-content-desc">
+                Projet de conseils touristiques pour aider les gens à organiser leurs voyages (des avis, des guides, des bons plans sur 
+                les destinations les plus recherchées, les restaurants les plus fins, les hôtels les plus luxueux, etc.)
+                Projet réalisé dans le cadre de la formation chez O'Clock.
+              </p>
+              <a class='btn btn--med btn--theme dynamicBgClr' href='/project-2' target='_blank'>Voir le projet</a
               >
             </div>
           </div>
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
-                src="./assets/jpeg/wilsonport.jpeg"
+                src="./assets/images/oshop.png"
                 alt="Software Screenshot"
                 class="projects__row-img"
                 loading="lazy"
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Wilsonport</h3>
+              <h3 class="projects__row-content-title">O'Shop</h3>
               <p class="projects__row-content-desc">
-                Wilsonport is a multiservice logistics and transport company and
-                I created their website from scratch using the frontend tools I
-                know.
+                Site e-commerce,  en l'occurence une boutique en ligne de chaussures.
+                Le site a été développé en respectant la methode agile Scrum (développement itératif par Sprints).
               </p>
-              <a class='btn btn--med btn--theme dynamicBgClr' href='/project-2' target='_blank'>Case Study</a
+              <a class='btn btn--med btn--theme dynamicBgClr' href='/project-3' target='_blank'>Voir le projet</a
               >
             </div>
           </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/boreal-coffee-clone.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Boreal Coffee Clone</h3>
-              <p class="projects__row-content-desc">
-                I re-created the frontend of Boreal Coffee's official web app
-                because I got attracted to their beautiful UI. It was a great
-                experience for me to build the entire frontend.
-              </p>
-              <a class='btn btn--med btn--theme dynamicBgClr' href='/project-3' target='_blank'>Case Study</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/crown-template.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Crown Template</h3>
-              <p class="projects__row-content-desc">
-                Crown is a web template that I created targeting the restaurant
-                and food industry which anyone can use to present their business
-                online.
-              </p>
-              <a class='btn btn--med btn--theme dynamicBgClr' href='/project-4' target='_blank'>Case Study</a
-              >
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>
     <section id="contact" class="contact sec-pad dynamicBg">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__main heading-sec__main--lt">Me contacter</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
-            Feel free to Contact me by submitting the form below and I will get
-            back to you as soon as possible
+            N'hésitez pas à me contacter ! Je serai ravi de vous repondre dans le plus bref délai.
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action='#' class='contact__form' method='post'><input type='hidden' name='form-name' value='form 1' />
+
+          <form action='https://formsubmit.co/sibysadam@gmail.com' class='contact__form' method='post'>
+            <input type='hidden' name='form-name' value='form 1' />
             <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
+              <label class="contact__form-label" for="name">Nom & Prénom</label>
               <input
                 required
-                placeholder="Enter Your Name"
+                placeholder="Entrer votre nom & prénom"
                 type="text"
                 class="contact__form-input"
                 name="name"
                 id="name"
               />
             </div>
+
             <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
+              <label class="contact__form-label" for="email">E-mail</label>
               <input
                 required
-                placeholder="Enter Your Email"
+                placeholder="Entrer votre E-mail"
                 type="email"
                 class="contact__form-input"
                 name="email"
@@ -414,15 +417,18 @@
                 cols="30"
                 rows="10"
                 class="contact__form-input"
-                placeholder="Enter Your Message"
+                placeholder="Votre message"
                 name="message"
                 id="message"
               ></textarea>
             </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://localhost/Job/sadam-siby/">
             <button type="submit" class="btn btn--theme contact__btn">
-              Submit
+              Envoyer
             </button>
           </form>
+          
         </div>
       </div>
     </section>
@@ -437,67 +443,32 @@
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://linkedin.com/in/rammcodes"
+                href="https://www.linkedin.com/in/sadam-siby/"
               >
                 <img
                   class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="Ram Maheshwari Linkedin Profile"
+                  src="assets/images/inkedin.jpg"
+                  alt="sadam SIBY Linkedin Profil"
                 />
               </a>
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://github.com/rammcodes"
+                href="https://github.com/Sadam-SIBY"
               >
                 <img
                   class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
+                  src="assets/images/github.jpg"
                   alt="RammCodes Github Profile"
                 />
               </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://twitter.com/rammcodes"
-              >
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="RammCodes Twitter Profile"
-                />
-              </a>
-
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://dev.to/rammcodes"
-              >
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/blog-ico.png"
-                  alt="RammCodes DEV.to Blog Profile"
-                />
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg"
-              >
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/yt-ico.png"
-                  alt="RammCodes Youtube Channel"
-                />
-              </a>
+              
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
             <h2 class="heading heading-sm text-lt">Sadam SIBY</h2>
             <p class="main-footer__short-desc">
-              A Frontend focused Web Developer building the Frontend of Websites
-              and Web Applications that leads to the success of the overall
-              product
+              sibysadam@gmail.com
             </p>
           </div>
         </div>

@@ -470,7 +470,7 @@ textarea {
 
 .contact__form-container {
     box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
-    background: white;
+    background: #666BF5;
     padding: 4rem;
     margin-top: 6rem;
     max-width: 80rem;
@@ -497,7 +497,7 @@ textarea {
 }
 
 .contact__form-label {
-    color: #666;
+    color: #0a0a0a;
     font-size: 1.4rem;
     letter-spacing: 1px;
     font-weight: 700;
@@ -884,14 +884,14 @@ textarea {
 }
 
 .main-footer {
-    background: #192a56;
+    background: #192A56;
     color: #fff
 }
 
 .main-footer__upper {
     display: flex;
     justify-content: space-between;
-    padding: 8rem 0
+    padding: 4rem 0
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -941,7 +941,8 @@ textarea {
 
 .main-footer__icon {
     margin-right: 1rem;
-    width: 2.5rem
+    width: 4rem ;
+    height:3rem;
 }
 
 .main-footer__icon--mr-none {
