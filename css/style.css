@@ -238,7 +238,9 @@ textarea {
 
 .home-hero {
     color: #fff;
-    background: linear-gradient(to right, rgba(39, 46, 243, 0.8), rgba(156, 156, 244, 0.8)),url(../../assets/svg/common-bg.svg);
+    background: linear-gradient(to right, rgba(39, 46, 243, 0.8), rgba(156, 156, 244, 0.8))
+    /* ,url(../../assets/svg/common-bg.svg) */
+    ;
     background-position: center;
     height: 100vh;
     min-height: 80rem;
@@ -463,7 +465,9 @@ textarea {
 }
 
 .contact {
-    background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../../assets/svg/common-bg.svg);
+    background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8))
+    /* ,url(../../assets/svg/common-bg.svg) */
+    ;
     background-size: cover;
     background-position: center
 }
@@ -582,7 +586,9 @@ textarea {
 
 .project-cs-hero {
     color: #fff;
-    background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../../assets/svg/common-bg.svg);
+    background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8))
+    /* ,url(../../assets/svg/common-bg.svg) */
+    ;
     background-size: cover;
     background-position: center;
     position: relative
@@ -945,6 +951,15 @@ textarea {
     height:3rem;
 }
 
+.fa-github {
+    font-size: 4rem;
+}
+
+.fa-linkedin{
+    font-size: 4rem;
+    margin-right: 1rem;
+}
+
 .main-footer__icon--mr-none {
     margin-right: 0
 }
@@ -1023,3 +1038,171 @@ textarea {
         top: 27px
     }
 }
+
+
+
+/* slider */
+.slider {
+    position: relative;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+
+  }
+  
+  .slider__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  
+  .slider__img--current {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .slider__btn {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+  }
+
+
+  
+  /* slider nav */
+  .slider__nav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .slider__nav-item {
+    border: 0;
+    padding: 0;
+    margin: 0.5em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100em;
+    margin: 0 auto;
+  }
+
+  .content {
+    padding: 3rem;
+   
+  }
+
+  .content__title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+ .slider__img {
+    max-width: 100%;
+  }
+
+  .slider__btn{
+    background-color: #192a56;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0.5rem;
+    display: inline-block;
+    width: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .slider__btn:hover, .slider__btn:focus {
+    background-color: #666BF5;
+    color: #fff;
+  }
+
+
+@media only screen and (max-width: 56.25em) {
+  
+   
+    .slider img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 37.5em) {
+    .slider {
+        position: relative;
+        height: 20rem;
+
+      }
+    
+      .slider__btn {
+        display: none;
+    
+}
+.button {
+    position: absolute;
+    z-index: 2;
+    font-weight: bold;
+    display: flex;
+    margin-left: 40%;
+    margin-top: 8rem;
+
+}
+}
+
+.theme-button {
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    padding: .7rem;
+    display: inline-block;
+    margin-left: .3rem;
+  }
+  .header .mode .toogle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor:pointer;
+/* background-color: #666BF5; */
+  }
+
+  .switch{
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toggle-color);
+  }
+
+  .switch::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: var(--sidebar-color);
+
+  }
