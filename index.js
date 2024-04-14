@@ -20,7 +20,7 @@ hamMenuBtn.addEventListener('click', () => {
     headerHamMenuBtn.classList.add('d-none')
     headerHamMenuCloseBtn.classList.remove('d-none')
   }
-})
+}) 
 
 for (let i = 0; i < headerSmallMenuLinks.length; i++) {
   headerSmallMenuLinks[i].addEventListener('click', () => {
