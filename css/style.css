@@ -416,6 +416,20 @@ textarea {
     margin-bottom: 11rem
 }
 
+.view{
+    font-size: 30px;
+    margin-right: 3rem;
+}
+.view:hover{
+    color: #666BF5;
+   
+}
+
+.access-project{
+    display: flex;
+    
+}
+
 @media only screen and (max-width: 56.25em) {
     .projects__row {
         grid-template-columns:1fr;
@@ -1161,7 +1175,6 @@ textarea {
 
 @media only screen and (max-width: 56.25em) {
   
-   
     .slider img{
         max-width: 100%;
         height: auto;
@@ -1173,13 +1186,12 @@ textarea {
     .slider {
         position: relative;
         height: 20rem;
-
       }
     
       .slider__btn {
         display: none;
-    
 }
+
 .button {
     position: absolute;
     z-index: 2;
@@ -1189,9 +1201,168 @@ textarea {
     margin-top: 8rem;
 
 }
+
 }
 
 #icon {
     width: 22px;
     cursor: pointer;
 }
+
+
+/* ................ */
+
+
+
+
+.imagesContainer   {
+
+    width: 60%;
+margin-left: 4rem;
+display: grid;
+margin-bottom: 4rem;
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    
+    }
+    
+    .image{
+          width: 100%; 
+         height: 90vh; 
+        /* background-position: center; 
+        background-repeat: no-repeat;  */
+         /* background-size: cover; */
+        position: relative; 
+/* 
+        display: grid; */
+        /* grid-template-columns: 1.5fr 1fr; */
+        /* grid-gap: 5rem;
+        margin-bottom: 11rem */
+  
+    }
+    
+    .image-text{
+        width:100%;
+        height: 100%;
+        z-index: 4;
+    }
+    
+    
+    .image-text div i{
+        font-size: 15px;
+        color:rgb(44, 43, 43);
+        display: none;
+    }
+    
+    
+    .image-text:hover{
+        cursor: pointer;
+        z-index: 2;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    }
+    
+    
+    /* .image-text:hover div{
+        position: absolute;
+        top:44%;
+        left: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background:#fff;
+        font-size: 1.2em;
+        cursor:zoom-in;
+        z-index: 7;
+    }
+     */
+    
+    .image-text:hover div i{
+        display: inline-block;
+    }
+    
+    .access-project:hover button i{
+        display: inline-block;
+    }
+    
+    
+    .imagePop{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 200;
+        display: none;
+        
+    }
+    
+    .imagePopUnder{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background:rgba(0, 0, 0, 0.9);
+        z-index: 12;
+    }
+    
+    .imagePopUnder:hover{
+        cursor:zoom-out;
+    }
+    
+    
+    .imageContain{
+        position: relative;
+        top:  0;
+       width: 80%;
+        height:80vh;
+        z-index: 12;
+        margin:20rem 15em 20rem 20rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    
+    }
+    
+    @keyframes he{
+    
+        100%{
+            left:0;
+        }
+    }
+    
+    
+    .click1{
+        position: absolute;
+        z-index: 14;
+        top:50%;
+        left: 5%;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .click2{
+        position: absolute;
+        z-index: 14;
+        top:50%;
+        right: 5%;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    
+    .close{
+        position: absolute;
+        z-index: 14;
+        top:5%;
+        right: 5%;
+        cursor: pointer;
+        color: #ffffff;
+    }
