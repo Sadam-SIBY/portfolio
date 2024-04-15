@@ -3,6 +3,7 @@ const app = {
     init: function () {
         slider.init();
         theme.init();
+        
     }
 }
 

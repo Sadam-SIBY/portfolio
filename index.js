@@ -40,7 +40,7 @@ headerLogoConatiner.addEventListener('click', () => {
 // -----------------------------------------------------------
 
 
-var imageUrls   = ['url("assets/images/oboulot.png")','url("assets/images/profiloboulot.png")', 'url("assets/images/profiloboulot.png")', 'url("assets/images/profiloboulot.png")',
+var imageUrls   = ['url("assets/images/oboulot.png")','url("assets/images/profiloboulot.png")','url("assets/images/AlloFlix.png")',
 
                      'url("assets/images/AlloFlix.png")', 'url("assets/images/oshop.png")', 'url("assets/images/oboulot.png")', 'url("assets/images/oboulot.png")',
                     
@@ -52,9 +52,8 @@ var imageNumber = imageUrls.length
 
 function imagePop(id){
 
-
-    document.getElementById('imagePopId').style.display = 'block'
-    document.getElementsByTagName('body')[0].style.overflowY = 'hidden'
+  document.getElementById('imagePopId').style.display = 'block'
+  document.getElementsByTagName('body')[0].style.overflowY = 'hidden'
 
     var imageName = document.getElementById(id + '-image').style.backgroundImage
 
@@ -94,11 +93,10 @@ function imageMoveLeft(){
 
     imageIndex = imageUrls.indexOf(imageName)
 
-    if(imageIndex <= 0)
+    if(imageIndex <= 0 )
     imageIndex = imageNumber - 1
     else
     imageIndex--
-
 
     document.getElementById('imageContainId').style.backgroundImage = imageUrls[imageIndex]
 
