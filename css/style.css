@@ -188,6 +188,7 @@ textarea {
 }
 
 .btn {
+   
     background: #192a56;
     color: #fff;
     text-transform: uppercase;
@@ -200,7 +201,9 @@ textarea {
 }
 
 .btn:hover {
-    transform: translateY(-3px)
+    transform: translateY(-3px);
+    background: #fff;
+    color: #192a56;
 }
 
 .btn--bg {
@@ -1267,6 +1270,11 @@ margin-bottom: 4rem;
         color: #fff;
     }
     
+    .click1:hover{
+        color:  #666BF5;
+    }
+
+
     .click2{
         position: absolute;
         z-index: 14;
@@ -1275,7 +1283,10 @@ margin-bottom: 4rem;
         cursor: pointer;
         color: #fff;
     }
-    
+
+    .click2:hover{
+        color:  #666BF5;
+    }
     
     .close{
         position: absolute;
@@ -1286,10 +1297,11 @@ margin-bottom: 4rem;
         color: #ffffff;
        font-size: 3rem;
         margin-top: 7rem;
-        color: hsl(0, 92%, 52%);
     }
 
-
+    .close:hover{
+        color:  hsl(0, 92%, 52%);
+    }
   
 
     @media only screen and (max-width: 37.5em) {
