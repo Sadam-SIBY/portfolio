@@ -39,6 +39,7 @@
   </head>
 
   <body >
+
     <header class="header">
       <div class="header__content">
         <a href="./" class="">
@@ -94,18 +95,14 @@
         </div>
       </div>
     </header>
+
     <section class="home-hero">
       <div class="home-hero__content">
         <h1 class="heading-primary">Bonjour, je suis Sadam SIBY</h1>
         <div class="home-hero__info">
           <p class="text-primary">
             Développeur <strong>Back-end</strong> spécialisé <strong>Symfony</strong>.
-          </p> 
-          <!-- <br> -->
-          <!-- <p class="text-primary">
-            <em>React </em> en cours d'apprentissage !
-          </p> -->
-          
+          </p>           
         </div>
         <div class="home-hero__cta">
           <a href="./#projets" class="btn btn--bg">Projets</a>
@@ -116,6 +113,7 @@
         <div class="mouse"></div>
       </div>
     </section>
+
     <section id="a-propos" class="about sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
@@ -159,6 +157,7 @@
         </div>
       </div>
     </section>
+
     <section id="projets" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
@@ -168,7 +167,7 @@
           </span>
         </h2>
         <div class="projects__content">
-          <div class="projects__row  ">
+          <!-- <div class="projects__row  ">
             <div class="projects__row-img-cont ">
               <img
                 src="./assets/images/oboulot.png"
@@ -188,26 +187,6 @@
               >
             </div>
           </div>
-
-          <!-- <div class="projects__row  ">
-            <div class="projects__row-img-cont ">
-              <img
-                src="./assets/images/oboulot.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">O'Boulot</h3>
-              <p class="projects__row-content-desc">
-                O'Boulot est un projet de type éducatif permettant à des enseignants de proposer des exercices et corrigés à des élèves de sa classe.
-              Cette application a été pensés et réalisés en équipe dans le cadre de ma formation auprès de l'école O'Clock.
-              </p>
-              <a class='btn btn--med btn--theme dynamicBgClr' href='oboulot.html' target='_blank'>Voir le projet</a
-              >
-            </div>
-          </div> -->
 
           <div class="projects__row">
             <div class="projects__row-img-cont">
@@ -252,6 +231,7 @@
               >
             </div>
           </div>
+
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
@@ -270,40 +250,119 @@
               <a class='btn btn--med btn--theme dynamicBgClr' href='/project-3' target='_blank'>Voir le projet</a
               >
             </div>
-          </div>
-<!-- ajout de popup -->
+          </div> -->
+
           <div class="projects__row  ">
-  <div class="projects__row-img-cont ">
-    <div>
-
-    </div  class="projects__row-img " id="oboulot-image" style="background-image:url(assets/images/oboulot.png);"> 
-  <img
-      src="./assets/images/oboulot.png"
-      alt="Software Screenshot" 
-      class="projects__row-img  "
-      loading="lazy"
-    /> 
-  </div>
-  <div class="projects__row-content">
-    <h3 class="projects__row-content-title">O'Boulot</h3>
-    <p class="projects__row-content-desc">
-      O'Boulot est un projet de type éducatif permettant à des enseignants de proposer des exercices et corrigés à des élèves de sa classe.
-    Cette application a été pensés et réalisés en équipe dans le cadre de ma formation auprès de l'école O'Clock.
-    </p>
-    
-    <div class="access-project">
-      <button class="view" onclick="imagePop(id);"> 
-        <i class="fa-solid fa-eye  " id="oboulot" ></i>
-      </button>
-      <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
-    </div>
-
-    
-  </div>
-</div>
-<!-- fin -->
-         
+            <div class="projects__row-img-cont ">
+              <div class="projects__row-img " id="oboulot-image" style="background-image:url(assets/images/oboulot.png);">
+              </div> 
+              <img
+                  src="./assets/images/oboulot.png"
+                  alt="Software Screenshot" 
+                  class="projects__row-img  "
+                  loading="lazy"
+                /> 
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">O'Boulot</h3>
+              <p class="projects__row-content-desc">
+                O'Boulot est un projet de type éducatif permettant à des enseignants de proposer des exercices et corrigés à des élèves de sa classe.
+              Cette application a été pensés et réalisés en équipe dans le cadre de ma formation auprès de l'école O'Clock.
+              </p>
+              
+              <div class="access-project">
+                <button class="view" onclick="imagePop(id);"> 
+                  <i class="fa-solid fa-eye  " id="oboulot" ></i>
+                </button>
+                <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
+              </div>
+            </div>
           </div>
+
+          <div class="projects__row  ">
+            <div class="projects__row-img-cont ">
+              <div class="projects__row-img " id="AlloFlixAccueil-image" style="background-image:url(assets/images/AlloFlixAccueil.png);">
+              </div> 
+              <img
+                  src="./assets/images/AlloFlixAccueil.png"
+                  alt="Software Screenshot" 
+                  class="projects__row-img  "
+                  loading="lazy"
+                /> 
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">AlloFlix</h3>
+              <p class="projects__row-content-desc">
+                Site qui répertorie les nouveautés en termes de films et séries. Les films et séries sont classés par genre et permet 
+              à l'utilisateur de rajouter les films et séries qui l'intéresse dans sa liste de favoris, de leur donner une note et 
+              d'émettre également des critiques sur ces films et séries. Le site a été avec le framework Symfony.
+              </p>
+              
+              <div class="access-project">
+                <button class="view" onclick="imagePop(id);"> 
+                  <i class="fa-solid fa-eye  " id="oboulot" ></i>
+                </button>
+                <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__row  ">
+            <div class="projects__row-img-cont ">
+              <div class="projects__row-img " id="oboulot-image" style="background-image:url(assets/images/oboulot.png);">
+              </div> 
+              <img
+                  src="./assets/images/trip.png"
+                  alt="Software Screenshot" 
+                  class="projects__row-img  "
+                  loading="lazy"
+                /> 
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Trip Odvisor</h3>
+              <p class="projects__row-content-desc">
+                Projet de conseils touristiques pour aider les gens à organiser leurs voyages (des avis, des guides, des bons plans sur 
+                les destinations les plus recherchées, les restaurants les plus fins, les hôtels les plus luxueux, etc.)
+                Projet réalisé dans le cadre de la formation chez O'Clock.
+              </p>
+              
+              <div class="access-project">
+                <button class="view" onclick="imagePop(id);"> 
+                  <i class="fa-solid fa-eye  " id="oboulot" ></i>
+                </button>
+                <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__row  ">
+            <div class="projects__row-img-cont ">
+              <div class="projects__row-img " id="oboulot-image" style="background-image:url(assets/images/oboulot.png);">
+              </div> 
+              <img
+                  src="./assets/images/oshop.png"
+                  alt="Software Screenshot" 
+                  class="projects__row-img  "
+                  loading="lazy"
+                /> 
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">O'Shop</h3>
+              <p class="projects__row-content-desc">
+                Site e-commerce,  en l'occurence une boutique en ligne de chaussures.
+                Le site a été développé en respectant la methode agile Scrum (développement itératif par Sprints).
+              </p>
+              
+              <div class="access-project">
+                <button class="view" onclick="imagePop(id);"> 
+                  <i class="fa-solid fa-eye  " id="oboulot" ></i>
+                </button>
+                <a class='btn btn--med btn--theme dynamicBgClr' href='#' target='_blank'> Lien vers le projet</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
