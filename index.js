@@ -41,8 +41,8 @@ headerLogoConatiner.addEventListener('click', () => {
 
 
 var imageUrls   = [
-                  index0 = ('url("assets/images/oboulot.png")','url("assets/images/connexion.png")','url("assets/images/bord.png")','url("assets/images/classe.png")','url("assets/images/exo.png")','url("assets/images/addQuestion.png")','url("assets/images/btp.png")','url("assets/images/eleve.png")','url("assets/images/reponse.png")','url("assets/images/correction.png")'),
-                  index1 = ('url("assets/images/AlloFlix.png")'),
+                  'url("assets/images/oboulot.png")','url("assets/images/connexion.png")','url("assets/images/bord.png")','url("assets/images/classe.png")','url("assets/images/exo.png")','url("assets/images/addQuestion.png")','url("assets/images/btp.png")','url("assets/images/eleve.png")','url("assets/images/reponse.png")','url("assets/images/correction.png")',
+                  'url("assets/images/AlloFlix.png")',
                 ]
                   
 
@@ -58,10 +58,10 @@ function imagePop(id){
     var imageName = document.getElementById(id + '-image').style.backgroundImage
 
     var imageIndex = 0
-    for(imageIndex of imageUrls) {
-      imageIndex = imageUrls.indexOf(imageName)
-    }
-    // imageIndex = imageUrls.indexOf(imageName)
+    // for(imageIndex of imageUrls) {
+    //   imageIndex = imageUrls.indexOf(imageName)
+    // }
+    imageIndex = imageUrls.indexOf(imageName)
     
     document.getElementsByClassName('imageContain')[0].style.animation = 'he 800ms forwards'
 
@@ -74,12 +74,12 @@ function imageChange(id){
     var imageName = document.getElementById(id).style.backgroundImage
 
     var imageIndex = 0
-    for(imageIndex of imageUrls) {
-      imageIndex = imageUrls.indexOf(imageName)
-    }
+    // for(imageIndex of imageUrls) {
+    //   imageIndex = imageUrls.indexOf(imageName)
+    // }
 
 
-    // imageIndex = imageUrls.indexOf(imageName)
+    imageIndex = imageUrls.indexOf(imageName)
 
     if(imageIndex >= imageNumber - 1)
     imageIndex = 0
@@ -96,10 +96,10 @@ function imageMoveLeft(){
     var imageName = document.getElementById('imageContainId').style.backgroundImage
 
     var imageIndex = 0
-    for(imageIndex of imageUrls) {
-      imageIndex = imageUrls.indexOf(imageName)
-    }
-    // imageIndex = imageUrls.indexOf(imageName)
+    // for(imageIndex of imageUrls) {
+    //   imageIndex = imageUrls.indexOf(imageName)
+    // }
+    imageIndex = imageUrls.indexOf(imageName)
 
     if(imageIndex <= 0 )
     imageIndex = imageNumber - 1
@@ -117,10 +117,10 @@ function imageMoveRight(){
 
     var imageIndex = 0
 
-    for(imageIndex of imageUrls) {
-      imageIndex = imageUrls.indexOf(imageName)
-    }
-    // imageIndex = imageUrls.indexOf(imageName)
+    // for(imageIndex of imageUrls) {
+    //   imageIndex = imageUrls.indexOf(imageName)
+    // }
+    imageIndex = imageUrls.indexOf(imageName)
 
     if(imageIndex >= imageNumber - 1)
     imageIndex = 0
@@ -140,3 +140,21 @@ function imagePopNone(){
     document.getElementsByTagName('body')[0].style.overflowY = 'scroll'
 
 }
+
+// --------------------------
+
+var imgUrls = [
+                [
+                  'url("assets/images/oboulot.png")','url("assets/images/connexion.png")'
+                ],
+                [
+                  'url("assets/images/bord.png")','url("assets/images/classe.png")','url("assets/images/exo.png")','url("assets/images/addQuestion.png")','url("assets/images/btp.png")','url("assets/images/eleve.png")'
+                ],
+                [
+                  'url("assets/images/AlloFlix.png")', 'url("assets/images/AlloFlixAdd.png")'
+                ]
+]
+
+console.log (imgUrls);
+
+// Pour chaque image à l'index 0 / 1 /2 je veux que tu m'exécute cette tâche : 
