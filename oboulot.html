@@ -329,3 +329,244 @@ document.getElementsByTagName('body')[0].style.overflowY = 'scroll'
   </script>
 </body>
 </html>
+
+
+
+
+// ---
+const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
+const smallMenu = document.querySelector('.header__sm-menu')
+const headerHamMenuBtn = document.querySelector('.header__main-ham-menu')
+const headerHamMenuCloseBtn = document.querySelector(
+  '.header__main-ham-menu-close'
+)
+const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
+
+hamMenuBtn.addEventListener('click', () => {
+  if (smallMenu.classList.contains('header__sm-menu--active')) {
+    smallMenu.classList.remove('header__sm-menu--active')
+  } else {
+    smallMenu.classList.add('header__sm-menu--active')
+  }
+  if (headerHamMenuBtn.classList.contains('d-none')) {
+    headerHamMenuBtn.classList.remove('d-none')
+    headerHamMenuCloseBtn.classList.add('d-none')
+  } else {
+    headerHamMenuBtn.classList.add('d-none')
+    headerHamMenuCloseBtn.classList.remove('d-none')
+  }
+}) 
+
+for (let i = 0; i < headerSmallMenuLinks.length; i++) {
+  headerSmallMenuLinks[i].addEventListener('click', () => {
+    smallMenu.classList.remove('header__sm-menu--active')
+    headerHamMenuBtn.classList.remove('d-none')
+    headerHamMenuCloseBtn.classList.add('d-none')
+  })
+}
+
+// ---
+const headerLogoConatiner = document.querySelector('.header__logo-container')
+
+headerLogoConatiner.addEventListener('click', () => {
+  location.href = '/'
+})
+
+// -----------------------------------------------------------
+
+
+  var imageUrls  =  ['url("assets/images/oboulot.png")','url("assets/images/connexion.png")']
+  var imageUrls_alloFlix  =  ['url("assets/images/bord.png")','url("assets/images/classe.png")','url("assets/images/exo.png")','url("assets/images/addQuestion.png")','url("assets/images/btp.png")','url("assets/images/eleve.png")']  
+  var imageUrls_oshop     =  ['url("assets/images/AlloFlix.png")', 'url("assets/images/AlloFlixAdd.png")']
+
+
+var imageNumber = imageUrls.length;
+var imageNumber_alloFlix = imageUrls_alloFlix.length
+var imageNumber_oshop = imageUrls_oshop.length
+
+
+function imagePop(id){
+
+  document.getElementById('imagePopId').style.display = 'block'
+  document.getElementsByTagName('body')[0].style.overflowY = 'hidden'
+
+    var imageName = document.getElementById(id + '-image').style.backgroundImage
+    var imageIndex = 0  
+    imageIndex = imageNumber.indexOf(imageName) 
+
+      document.getElementsByClassName('imageContain')[0].style.animation = 'he 800ms forwards'
+      document.getElementsByClassName('imageContain')[0].style.backgroundImage = imageUrls[imageIndex]
+
+}
+
+function imagePop2(id){
+
+  document.getElementById('imagePopId2').style.display = 'block'
+  document.getElementsByTagName('body')[0].style.overflowY = 'hidden'
+
+    var imageName2 = document.getElementById(id + '-image').style.backgroundImage
+
+    var imageIndex2 = 0
+
+    imageIndex2 = imageNumber_alloFlix.indexOf(imageName2)
+
+      document.getElementsByClassName('imageContain')[0].style.animation = 'he 800ms forwards'
+      document.getElementsByClassName('imageContain')[0].style.backgroundImage = imageUrls_alloFlix [imageIndex2]
+}
+
+function imagePop3(id){
+
+  document.getElementById('imagePopId3').style.display = 'block'
+  document.getElementsByTagName('body')[0].style.overflowY = 'hidden'
+
+    var imageName3 = document.getElementById(id + '-image').style.backgroundImage
+    var imageIndex3 = 0
+
+    imageIndex3 = imageNumber_oshop.indexOf(imageName3)
+
+
+      document.getElementsByClassName('imageContain')[0].style.animation = 'he 800ms forwards'
+      document.getElementsByClassName('imageContain')[0].style.backgroundImage = imageUrls_oshop[imageIndex3]
+}
+
+function imageChange(id){
+
+    var imageName = document.getElementById(id).style.backgroundImage
+    var imageIndex = 0
+    imageIndex = imageUrls.indexOf(imageName)
+      if(imageIndex >= imageNumber - 1 )
+      imageIndex = 0
+      else
+      imageIndex++
+      document.getElementById(id).style.backgroundImage = imageUrls[imageIndex]
+}
+
+function imageChange2(id){
+
+  var imageName2 = document.getElementById(id).style.backgroundImage
+
+  var imageIndex2 = 0
+
+  imageIndex2 = imageUrls_alloFlix.indexOf(imageName2)
+  
+    if(imageIndex2 >= imageNumber_alloFlix - 1 )
+    imageIndex2 = 0
+    else
+    imageIndex2++
+
+    document.getElementById(id).style.backgroundImage = imageUrls_alloFlix [imageIndex2]
+
+}
+
+function imageChange3(id){
+
+  var imageName3 = document.getElementById(id).style.backgroundImage
+
+  var imageIndex3 = 0
+
+  imageIndex3 = imageUrls_alloFlix.indexOf(imageName3)
+  
+    if(imageIndex3 >= imageNumber_alloFlix - 1 )
+    imageIndex3 = 0
+    else
+    imageIndex3++
+
+    document.getElementById(id).style.backgroundImage = imageUrls_oshop [imageIndex3]
+
+}
+
+
+function imageMoveLeft(){
+    var imageName = document.getElementById('imageContainId').style.backgroundImage
+    var imageIndex = 0
+    imageIndex = imageUrls.indexOf(imageName)
+      if(imageIndex <= 0 )
+      imageIndex = imageNumber - 1
+      else
+      imageIndex--
+
+      document.getElementById('imageContainId').style.backgroundImage = imageUrls[imageIndex]
+}
+
+function imageMoveLeft2(){
+
+  var imageName2 = document.getElementById('imageContainId').style.backgroundImage
+
+  var imageIndex2 = 0
+
+  imageIndex2 = imageUrls_alloFlix.indexOf(imageName2)
+
+     if(imageIndex2 <= 0 )
+    imageIndex2 = imageNumber_alloFlix - 1
+    else
+    imageIndex2--
+
+    document.getElementById('imageContainId').style.backgroundImage = imageUrls_alloFlix [imageIndex2]
+}
+
+function imageMoveLeft3(){
+
+  var imageName3 = document.getElementById('imageContainId').style.backgroundImage
+
+
+  var imageIndex3 = 0
+
+  imageIndex3 = imageUrls_oshop.indexOf(imageName3)
+
+  if(imageIndex3 <= 0 )
+  imageIndex3 = imageNumber_oshop  - 1
+  else
+  imageIndex3--
+
+  document.getElementById('imageContainId').style.backgroundImage = imageUrls_oshop[imageIndex3]
+
+}
+
+
+function imageMoveRight(){
+
+    var imageName = document.getElementById('imageContainId').style.backgroundImage
+
+    imageIndex = imageUrls.indexOf(imageName)
+
+    // imageIndex2 = imageUrls_alloFlix(imageName)
+
+    imageIndex3 = imageUrls_oshop.indexOf(imageName)
+    
+  if ( imageIndex ){
+    if(imageIndex >= imageNumber - 1)
+    imageIndex = 0
+    else
+    imageIndex++
+
+    document.getElementById('imageContainId').style.backgroundImage = imageUrls[imageIndex]
+  }
+  else if (imageIndex2)
+  {
+    if(imageIndex2 >= imageNumber - 1)
+    imageIndex = 0
+    else
+    imageIndex++
+
+    document.getElementById('imageContainId').style.backgroundImage = imageUrls_alloFlix[imageIndex2]
+  }
+  else {
+    if(imageIndex3 >= imageNumber - 1)
+    imageIndex = 0
+    else
+    imageIndex++
+
+    document.getElementById('imageContainId').style.backgroundImage = imageUrls_oshop[imageIndex3]
+  }
+
+  }
+
+// }
+
+function imagePopNone(){
+
+    document.getElementsByClassName('imagePop')[0].style.display = 'none'
+    document.getElementsByTagName('body')[0].style.overflowY = 'scroll'
+
+}
+

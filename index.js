@@ -40,26 +40,12 @@ headerLogoConatiner.addEventListener('click', () => {
 // -----------------------------------------------------------
 
 
-var imageUrls   = [
-                    [
-                      'url("assets/images/oboulot.png")','url("assets/images/connexion.png")'
-                    ]
-                    ,
-                    [
-                      'url("assets/images/bord.png")','url("assets/images/classe.png")','url("assets/images/exo.png")','url("assets/images/addQuestion.png")','url("assets/images/btp.png")','url("assets/images/eleve.png")'
-                    ],
-                    [
-                      'url("assets/images/AlloFlix.png")', 'url("assets/images/AlloFlixAdd.png")'
-                    ]
-]
+var imageUrls   = ['url("assets/images/oboulot.png")','url("assets/images/connexion.png")']
 
 // var imageNumber = imageUrls.length
 
 
-for (var i = 0; i < imageUrls.length; i++){
-  var imageNumber = imageUrls[i]
-  console.log (imageNumber);
-}
+  var imageNumber = imageUrls
 
 
 function imagePop(id){
