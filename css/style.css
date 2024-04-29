@@ -2,11 +2,13 @@
 :root{
     --primary-color: #edf2fc;
     --primary-secondary: #212121;
+    --primary-tertiary: #fff;
 }
 
 .dark-theme{
     --primary-color: #000106;
     --primary-secondary: #fff;
+    --primary-tertiary: #000106;
 }
 
 *,*::after,*::before {
@@ -118,11 +120,9 @@ textarea {
     margin-bottom: 3.5rem;
     position: relative;
     color: var(--primary-secondary);
-    /* color: #111 */
 }
 
 .heading-sec__main--lt {
-    /* color: #111; */
     color: var(--primary-secondary);
     font-weight: 800
 }
@@ -130,7 +130,6 @@ textarea {
 .heading-sec__main--lt::after {
     content: '';
     background: var(--primary-color);
-    /* background: #192a56 !important */
 
 }
 
@@ -183,9 +182,15 @@ textarea {
 
 .main-container {
     max-width: 120rem;
-    margin: auto;
+    margin: 12rem auto 0;
     width: 92%
 }
+.projects-container {
+    max-width: 120rem;
+    margin: 7rem auto 5rem;
+    width: 92%
+}
+
 
 .btn {
    
@@ -230,7 +235,7 @@ textarea {
 }
 
 .sec-pad {
-    padding: 12rem 0;
+    padding: 5rem 0;
 
 }
 
@@ -241,7 +246,6 @@ textarea {
 }
 
 .text-primary {
-    /* color: #333; */
     color: var(--primary-secondary);
     font-size: 2.2rem;
     text-align: center;
@@ -261,7 +265,6 @@ textarea {
 
 .home-hero {
     color: #fff;
-    /* background: var(--primary-color); */
     background: linear-gradient(to right, rgba(39, 46, 243, 0.8), rgba(156, 156, 244, 0.8));
     background-position: center;
     height: 100vh;
@@ -277,21 +280,6 @@ textarea {
     }
 }
 
-/* .home-hero__socials {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #fff;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
-    padding: .5rem
-} */
-
-/* @media only screen and (max-width: 56.25em) {
-    .home-hero__socials {
-        display:none
-    }
-} */
-
 .home-hero__mouse-scroll-cont {
     position: absolute;
     bottom: 3%;
@@ -305,9 +293,6 @@ textarea {
     }
 }
 
-/* .home-hero__social {
-    width: 5rem
-} */
 
 .home-hero__social-icon-link {
     width: 100%;
@@ -358,7 +343,6 @@ textarea {
 }
 
 .about {
-    /* background: #fafafa; */
     background: var(--primary-color);
     
 }
@@ -503,8 +487,7 @@ textarea {
 }
 
 .contact {
-        background: var(--primary-color);
-    /* background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)); */
+        background: var( --primary-tertiary);
     background-size: cover;
     background-position: center
 }
@@ -512,7 +495,6 @@ textarea {
 .contact__form-container {
     box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
     background: #192a56;
-    /* background: var(--primary-color); */
     padding: 4rem;
     margin-top: 6rem;
     max-width: 80rem;
@@ -555,7 +537,6 @@ textarea {
     border: 1px solid #ebebeb;
     font-size: 1.6rem;
     letter-spacing: 0px;
-    /* background: #f0f0f0; */
     background: var(--primary-color);
     border-radius: 5px;
     font-weight: 600
@@ -990,11 +971,19 @@ textarea {
 .fa-github {
     font-size: 4rem;
 }
+.fa-github:hover {
+    transform: translateY(-2px);
+}
 
 .fa-linkedin{
     font-size: 4rem;
     margin-right: 1rem;
 }
+
+.fa-linkedin:hover {
+    transform: translateY(-2px);
+}
+
 
 .main-footer__icon--mr-none {
     margin-right: 0
@@ -1088,10 +1077,10 @@ textarea {
     margin-bottom: 2rem;
 
   }
-  
+
+
   .slider__img {
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -1099,21 +1088,21 @@ textarea {
     opacity: 0;
     transition: opacity .3s;
   }
-  
+
+ 
+
   .slider__img--current {
     opacity: 1;
     z-index: 1;
   }
-  
+
   .slider__btn {
     position: relative;
     z-index: 2;
     font-weight: bold;
   }
 
-
   
-  /* slider nav */
   .slider__nav {
     position: absolute;
     display: flex;
@@ -1142,6 +1131,7 @@ textarea {
 
   .content {
     padding: 3rem;
+    margin-bottom: 2rem;
    
   }
 
@@ -1152,6 +1142,7 @@ textarea {
   }
  .slider__img {
     max-width: 100%;
+    height: auto;
   }
 
   .slider__btn{
@@ -1171,7 +1162,6 @@ textarea {
     color: #fff;
   }
 
-/* ......... */
 @media only screen and (max-width: 56.25em) {
   
     .slider img{
@@ -1206,119 +1196,3 @@ textarea {
     width: 22px;
     cursor: pointer;
 }
-
-.imagesContainer   {
-
-width: 60%;
-margin-left: 4rem;
-display: grid;
-margin-bottom: 4rem;
-}
-    
-    
-    .imagePop{
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top:0;
-        left: 0;
-        z-index: 200;
-        display: none;
-        
-    }
-    
-    .imagePopUnder{
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background:rgba(0, 0, 0, 0.9);
-        z-index: 12;
-    }
-    
-    .imagePopUnder:hover{
-        cursor:zoom-out;
-    }
-    
-    .imageContain{
-        position: relative;
-        top:  0;
-        left: -20%;
-        z-index: 12;
-        margin: 25vh 30%;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        cursor: pointer;
-    }
-    
-    @keyframes he{
-    
-        100%{
-            left:0;
-        }
-    }
-    
-    
-    .click1{
-        position: absolute;
-        z-index: 14;
-        top:50%;
-        left: 5%;
-        cursor: pointer;
-        color: #fff;
-    }
-    
-    .click1:hover{
-        color:  #666BF5;
-    }
-
-
-    .click2{
-        position: absolute;
-        z-index: 14;
-        top:50%;
-        right: 5%;
-        cursor: pointer;
-        color: #fff;
-    }
-
-    .click2:hover{
-        color:  #666BF5;
-    }
-    
-    .close{
-        position: absolute;
-        z-index: 14;
-        top:5%;
-        right: 5%;
-        cursor: pointer;
-        color: #ffffff;
-       font-size: 3rem;
-        margin-top: 7rem;
-    }
-
-    .close:hover{
-        color:  hsl(0, 92%, 52%);
-    }
-  
-
-    @media only screen and (max-width: 37.5em) {
-        .fa-3x {
-            font-size: 1em;
-        }
-        .click1{
-          
-            color: #fff;
-        }
-        
-        .click2{
-          
-            color: #fff;
-        }
-  
-        .imageContain {
-            top: -10%;
-        }
-    }

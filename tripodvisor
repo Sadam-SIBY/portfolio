@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sadam SIBY |Développeur Back-end PHP Symfony</title>
+    <meta
+      name="description"
+      content="Dévéloppeur Back-end spécilisé en PHP et Symfony apte à rélever des défis"
+    />
+    <meta name="autheur" content="Sadam SIBY" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QD9ESD1D9K"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QD9ESD1D9K");
+    </script>
+  </head>
+
+  <body >
+
+    <header class="header">
+      <div class="header__content">
+        <a href="./" class="">
+          <div class="header__logo-container">
+            <div class="header__logo-img-cont">
+              <img src="assets/images/photo.jpg" alt="Sadam SIBY Logo Image" class="header__logo-img"/>
+            </div>
+              <span class="header__logo-sub">Sadam SIBY </span>
+          </div>
+        </a>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./" class="header__link"> Accueil</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#a-propos" class="header__link">À propos de moi </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#projets" class="header__link"> Projets </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#contact" class="header__link"> Me contacter </a>
+            </li>
+            <div class="header__link">
+              <img src="assets/images/moon.png" id="icon" alt="">
+            </div>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./"> Accueil </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#a-propos"> À propos de moi </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#projets"> Projets </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#contact"> Me contacter </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section id="oboulot" class="about sec-pad">
+        <div class="main-container oboulot-content">
+          <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main oboulot-content">TripOdvisor</span>
+          </h2>
+          <div class="about__content">
+            <div class="about__content-main">
+              <div class="about__content-details">
+                <p class="about__content-details-para oboulot-content">
+                   Projet de conseils touristiques visant à aider les gens à organiser leurs voyages en fournissant des avis,
+                  des guides et des bons plans sur les destinations les plus recherchées, ainsi que sur les restaurants les 
+                  plus fins et les hôtels les plus luxueux, etc. Ce projet a été réalisé dans le cadre de ma formation chez O'Clock.
+                </p>
+          
+              </div>
+  
+            </div>
+            <div class="about__content-skills">
+              <h3 class="about__content-title">Technologies</h3>
+              <div class="skills">
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">Javascripts</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="container ">
+      <div class="content">     
+        <section class="slider">
+          <button class="btn slider__btn" type="button" aria-label="Précédent">&lt;</button>
+          <button class="btn slider__btn button" type="button" aria-label="Suivant">&gt;</button>
+        </section>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="main-container">
+          <div class="main-footer__upper">
+            <div class="main-footer__row main-footer__row-1">
+              <h2 class="heading heading-sm main-footer__heading-sm">
+                <span>Social</span>
+              </h2>
+              <div class="main-footer__social-cont">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/sadam-siby/"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Sadam-SIBY"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+               
+           
+  
+              </div>
+            </div>
+            <div class="main-footer__row main-footer__row-2">
+              <h2 class="heading heading-sm text-lt">Sadam SIBY</h2>
+              <p class="main-footer__short-desc">
+                sibysadam@gmail.com
+              </p>
+              <p class="main-footer__short-desc">
+                06-52-55-06-91
+              </p>
+            </div>
+          </div>
+  
+          <div class="main-footer__lower">
+            &copy; Copyright
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            . Made by Sadam SIBY
+            
+          </div>
+        </div>
+  
+  
+      </footer>
+      <script src="./js/App.js"></script>
+      <script src="./js/slider4.js"></script>
+      <script src="./js/theme.js"></script>
+ 
+    </body>
+  </html>
