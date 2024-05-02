@@ -12,7 +12,7 @@ let isFirstPass3 = true;
 
 for (const imgName3 of sliderImagesNames3) {
     const newImg3 = document.createElement('img');
-    newImg3.src = '/Job/portfolio/assets/images/' + imgName3;
+    newImg3.src = 'assets/images/' + imgName3;
     newImg3.classList.add('slider__img'); 
     if (isFirstPass3 === true) {
         newImg3.classList.add('slider__img--current');

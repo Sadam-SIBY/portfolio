@@ -22,7 +22,7 @@
   
         for (const imgName2 of sliderImagesNames2) {
             const newImg2 = document.createElement('img');
-            newImg2.src = '/Job/portfolio/assets/images/' + imgName2;
+            newImg2.src = 'assets/images/' + imgName2;
             newImg2.classList.add('slider__img'); 
   
             if (isFirstPass2 === true) {
