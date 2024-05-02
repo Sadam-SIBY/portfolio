@@ -2,7 +2,6 @@
 const App = {
     init: function () {
         theme.init();
-        slider.init();
     }
 }
 

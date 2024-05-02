@@ -1,69 +1,69 @@
 
-const sliderImagesNames = [
+const sliderImagesNames3 = [
     "AlloFlixAccueil.png",
     "AlloFlixShow.png",
     "AlloFlixFavoris.png",
     "AlloFlixAdd.png",
 ];
 
-const slider = document.querySelector('section.slider');
+const slider3 = document.querySelector('section.slider3');
 
-let isFirstPass = true;
+let isFirstPass3 = true;
 
-for (const imgName of sliderImagesNames) {
-    const newImg = document.createElement('img');
-    newImg.src = '/Job/portfolio/public/images/' + imgName;
-    newImg.classList.add('slider__img'); 
-    if (isFirstPass === true) {
-        newImg.classList.add('slider__img--current');
+for (const imgName3 of sliderImagesNames3) {
+    const newImg3 = document.createElement('img');
+    newImg3.src = '/Job/portfolio/assets/images/' + imgName3;
+    newImg3.classList.add('slider__img'); 
+    if (isFirstPass3 === true) {
+        newImg3.classList.add('slider__img--current');
     }
-    slider.append(newImg);
-    isFirstPass = false;
+    slider3.append(newImg3);
+    isFirstPass3 = false;
 }
 
-imagesElements: [],
-currentPosition = 0;
+imagesElements3: [],
+currentPosition3 = 0;
 
 
-imagesElements = document.querySelectorAll('.slider .slider__img');
+imagesElements3 = document.querySelectorAll('.slider3 .slider__img');
 
-const sliderButtons = document.querySelectorAll('.slider__btn');
+const sliderButtons3 = document.querySelectorAll('.slider3__btn');
 
-const previousSliderButton = sliderButtons[0];
-previousSliderButton.addEventListener('click', handleClickPreviousSlide);
-
-
-const nextSliderButton = sliderButtons[1];
-nextSliderButton.addEventListener('click', handleClickNextSlide);
+const previousSliderButton3 = sliderButtons3[0];
+previousSliderButton3.addEventListener('click', handleClickPreviousSlide3);
 
 
+const nextSliderButton3 = sliderButtons3[1];
+nextSliderButton3.addEventListener('click', handleClickNextSlide3);
 
-function handleClickPreviousSlide(event){
+
+
+function handleClickPreviousSlide3(event){
    
 
 
-    goToSlide(currentPosition - 1);
+    goToSlide3(currentPosition3 - 1);
 }
 
-function handleClickNextSlide(event){
+function handleClickNextSlide3(event){
 
-    goToSlide(currentPosition + 1);
+    goToSlide3(currentPosition3 + 1);
 }
 
- function goToSlide(newPosition) {
+ function goToSlide3(newPosition3) {
 
-    imagesElements[currentPosition].classList.remove('slider__img--current');
+    imagesElements3[currentPosition3].classList.remove('slider__img--current');
 
-   currentPosition = newPosition;
+   currentPosition3 = newPosition3;
 
 
-    if (currentPosition < 0) {
-    currentPosition = imagesElements.length - 1;
+    if (currentPosition3 < 0) {
+    currentPosition3 = imagesElements3.length - 1;
     }
 
-    if (currentPosition > imagesElements.length - 1) {
-        currentPosition = 0;
+    if (currentPosition3 > imagesElements3.length - 1) {
+        currentPosition3 = 0;
     }
 
-   imagesElements[currentPosition].classList.add('slider__img--current');
+   imagesElements3[currentPosition3].classList.add('slider__img--current');
 }

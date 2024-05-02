@@ -1067,7 +1067,7 @@ textarea {
 
 
 /* slider */
-.slider {
+.slider, .slider1 , .slider2 , .slider3 , .slider4  {
     position: relative;
     height: 40rem;
     display: flex;
@@ -1096,11 +1096,12 @@ textarea {
     z-index: 1;
   }
 
-  .slider__btn {
+  .slider__btn,.slider1__btn, .slider2__btn,.slider3__btn, .slider4__btn{
     position: relative;
     z-index: 2;
     font-weight: bold;
   }
+  
 
   
   .slider__nav {
@@ -1145,7 +1146,7 @@ textarea {
     height: auto;
   }
 
-  .slider__btn{
+  .slider__btn,.slider1__btn, .slider2__btn, .slider3__btn, .slider4__btn{
     background-color: #192a56;
     border: 0;
     border-radius: 3px;
@@ -1156,9 +1157,9 @@ textarea {
     margin-right: 1rem;
     margin-left: 1rem;
   }
-  
-  .slider__btn:hover, .slider__btn:focus {
-    background-color: #666BF5;
+
+  .slider__btn:hover, .slider__btn:focus,.slider1__btn:hover, .slider1__btn:focus, .slider2__btn:hover, .slider2__btn:focus,.slider3__btn:hover, .slider3__btn:focus,.slider4__btn:hover, .slider4__btn:focus{
+    background-color: #9d66f5;
     color: #fff;
   }
 
@@ -1171,12 +1172,12 @@ textarea {
 }
 
 @media only screen and (max-width: 37.5em) {
-    .slider {
+    .slider,.slider1, .slider2,.slider3,.slider4 {
         position: relative;
         height: 20rem;
       }
     
-      .slider__btn {
+      .slider__btn, .slider1__btn,.slider2__btn,.slider3__btn,.slider4__btn {
         display: none;
 }
 
