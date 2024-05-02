@@ -91,7 +91,7 @@ textarea {
 }
 
 .heading-sec__mb-bg {
-    margin-bottom: 11rem
+    /* margin-bottom: 11rem */
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -139,8 +139,8 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    /* background: #192a56; */
-    background: var(--primary-color);
+    background: #666BF5;
+    /* background: var(--primary-color); */
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px
@@ -170,7 +170,6 @@ textarea {
 }
 
 .heading-sec__sub--lt {
-    /* color: #333 */
     color: var(--primary-secondary);
 }
 
@@ -193,7 +192,6 @@ textarea {
 
 
 .btn {
-   
     background: #192a56;
     color: #fff;
     text-transform: uppercase;
@@ -223,7 +221,8 @@ textarea {
 
 .btn--theme {
     background: #192a56;
-    color: #fff
+    color: #fff;
+    margin: .5rem;
 }
 
 .btn--theme-inv {
@@ -235,7 +234,7 @@ textarea {
 }
 
 .sec-pad {
-    padding: 5rem 0;
+    padding: 1rem 0;
 
 }
 
@@ -343,7 +342,8 @@ textarea {
 }
 
 .about {
-    background: var(--primary-color);
+    /* background: var(--primary-color); */
+    background: var( --primary-tertiary);
     
 }
 
@@ -396,11 +396,16 @@ textarea {
     margin: 0 3px
 }
 
+.about__link, a{
+   text-align: center;
+
+}
+
 .projects__row {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    grid-gap: 5rem;
-    margin-bottom: 11rem
+    grid-gap: 1rem;
+    margin-bottom: 2rem
 }
 
 .view{
@@ -487,7 +492,7 @@ textarea {
 }
 
 .contact {
-        background: var( --primary-tertiary);
+    background: var( --primary-tertiary);
     background-size: cover;
     background-position: center
 }
@@ -955,7 +960,7 @@ textarea {
     margin-top: 2rem;
     color: #eee;
     font-size: 1.5rem;
-    line-height: 1.7
+    line-height: 1
 }
 
 .main-footer__social-cont {
@@ -1131,8 +1136,8 @@ textarea {
   }
 
   .content {
-    padding: 3rem;
-    margin-bottom: 2rem;
+    /* padding: 3rem;
+    margin-bottom: 2rem; */
    
   }
 
@@ -1148,6 +1153,7 @@ textarea {
 
   .slider__btn,.slider1__btn, .slider2__btn, .slider3__btn, .slider4__btn{
     background-color: #192a56;
+    opacity: 0.8;
     border: 0;
     border-radius: 3px;
     color: #fff;
@@ -1176,19 +1182,19 @@ textarea {
         position: relative;
         height: 20rem;
       }
-    
+ 
       .slider__btn, .slider1__btn,.slider2__btn,.slider3__btn,.slider4__btn {
-        display: none;
+        padding: 0.3rem;
+        background-color:#192a56;
+        opacity: 0.6;
+        
+         margin-right: 0.5rem;
+         margin-left: 0.5rem;
 }
 
-.button {
-    position: absolute;
-    z-index: 2;
-    font-weight: bold;
-    display: flex;
-    margin-left: 40%;
-    margin-top: 8rem;
-
+.slider__btn:hover, .slider__btn:focus, .slider1__btn:hover, .slider1__btn:focus, .slider2__btn:hover, .slider2__btn:focus, .slider3__btn:hover, .slider3__btn:focus, .slider4__btn:hover, .slider4__btn:focus {
+    background-color: #9d66f5;
+    color: #fff;
 }
 
 }

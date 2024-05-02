@@ -76,6 +76,8 @@
             </div>
           </ul>
           <div class="header__main-ham-menu-cont">
+            <img src="assets/images/hamburger.png" alt="menu-hamburger" class="header__main-ham-menu">
+            <img src="assets/images/close.png" alt="menu-hamburger close" class="header__main-ham-menu-close d-none">
 
           </div>
         </div>
@@ -141,12 +143,11 @@
               </p>
          
             </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Me contacter</a
-            >
-            <a href="./assets/docs/sadam-cv.pdf" target='_blank' class="btn btn--med btn--theme dynamicBgClr"
-              >Consulter mon CV</a
-            >
+            <div class="about__link">
+              <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Me contacter</a>
+              <a href="./assets/docs/sadam-cv.pdf" target='_blank' class="btn btn--med btn--theme dynamicBgClr">Consulter mon CV</a>
+            </div>
+            
           </div>
           <div class="about__content-skills">
             <h3 class="about__content-title">Mes compétences</h3>
@@ -194,7 +195,12 @@
                     <p class="projects__row-content-desc">
                        Plateforme de recherche juridique permettant aux juristes de retrouver facilement n'importe quel article de loi et décision de justice via un moteur de recherche par mot-clé ("Projet en cours de réalisation...").
                     </p>
-                    <a class='btn btn--med btn--theme dynamicBgClr' href='legaloa' target='_blank'> En savoir plus</a>
+                    <div class="skills">
+                      <div class="skills__skill">HTML</div>
+                      <div class="skills__skill">CSS</div>
+                      <div class="skills__skill">Symfony</div>
+                      <div class="skills__skill">Bootstrap</div>
+                    </div>
                 </div>
             </div>
 
@@ -213,7 +219,13 @@
                         O'Boulot est un projet éducatif permettant aux enseignants de proposer des exercices et corrigés à leurs élèves. 
                         Cette application a été conçue et réalisée en équipe dans le cadre de ma formation à l'école O'Clock.
                     </p>
-                    <a class='btn btn--med btn--theme dynamicBgClr' href='./oboulot' target='_blank'> En savoir plus</a>
+                    <div class="skills">
+                      <div class="skills__skill">HTML</div>
+                      <div class="skills__skill">CSS</div>
+                      <div class="skills__skill">Symfony</div>
+                      <div class="skills__skill">React</div>
+                      <div class="skills__skill">Bootstrap</div>
+                    </div>
                 </div>
             </div>
 
@@ -233,13 +245,16 @@
                           à l'utilisateur d'ajouter ceux qui l'intéressent à sa liste de favoris, de leur attribuer une note et de publier des
                           critiques. Le site a été développé avec le framework Symfony.
                     </p>
-                    <a class='btn btn--med btn--theme dynamicBgClr' href='./alloFlix' target='_blank'> En savoir plus</a>
+                    <div class="skills">
+                      <div class="skills__skill">HTML</div>
+                      <div class="skills__skill">CSS</div>
+                      <div class="skills__skill">Bootstrap</div>
+                      <div class="skills__skill">Symfony</div>
+                    </div>
                 </div>
             </div>
 
             <div class="projects__row  ">
-
-              <!-- ----- -->
 
               <section class="container ">
                 <div class="content">   
@@ -250,15 +265,6 @@
                 </div>
               </section>
 
-
-                <!-- <div class="projects__row-img-cont ">            
-                    <img
-                    src="./assets/images/trip1.png"
-                    alt="Software Screenshot" 
-                    class="projects__row-img  "
-                    loading="lazy"
-                    /> 
-                </div>  -->
                 <div class="projects__row-content">
                     <h3 class="projects__row-content-title">Trip Odvisor</h3>
                     <p class="projects__row-content-desc">
@@ -266,15 +272,15 @@
                           des guides et des bons plans sur les destinations les plus recherchées, ainsi que sur les restaurants les 
                           plus fins et les hôtels les plus luxueux, etc. Ce projet a été réalisé dans le cadre de ma formation chez O'Clock.
                     </p>
-                    <a class='btn btn--med btn--theme dynamicBgClr' href='./tripodvisor' target='_blank'> En savoir plus</a>
+                    <div class="skills">
+                      <div class="skills__skill">HTML</div>
+                      <div class="skills__skill">CSS</div>
+                      <div class="skills__skill">Javascripts</div>
+                    </div>
                 </div>
             </div>
 
             <div class="projects__row  ">
-
-
-              <!-- ----- -->
-
               <section class="container ">
                 <div class="content">   
                   <section class="slider">
@@ -283,29 +289,18 @@
                   </section>
                 </div>
               </section>
-
-                <!-- <div class="projects__row-img-cont ">
-            
-                    <img
-                    src="./assets/images/oshop.png"
-                    alt="Software Screenshot" 
-                    class="projects__row-img  "
-                    loading="lazy"
-                    /> 
-                </div>  -->
-
-
-                <!-- --------- -->
                 <div class="projects__row-content">
                     <h3 class="projects__row-content-title">O'Shop</h3>
                     <p class="projects__row-content-desc">
                         Site e-commerce, en l'occurrence une boutique en ligne de chaussures. Le développement du site a suivi la
                          méthodologie agile Scrum, basée sur un développement itératif par Sprints.
                     </p>
-                    <a class='btn btn--med btn--theme dynamicBgClr' href='./oshop' target='_blank'>En savoir plus</a>
+                      <div class="skills">
+                        <div class="skills__skill">HTML</div>
+                        <div class="skills__skill">CSS</div>
+                        <div class="skills__skill">Bootstrap</div>
+                      </div>
                 </div>
-            </div>
-
          </div>
       </div>
     </section>
@@ -358,7 +353,7 @@
               ></textarea>
             </div>
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="http://localhost/Job/sadam-siby/">
+            <input type="hidden" name="_next" value="http://localhost/Job/portfolio/">
             <button type="submit" class="btn btn--theme contact__btn">
               Envoyer
             </button>
@@ -420,13 +415,7 @@
 
 
     </footer>
-
-    <!-- <script src="./js/slider.js"></script> -->
     <script src="./js/theme.js"></script>
     <script src="./js/index.js"></script>
-
-    <!-- <script src="./js/slider5.js"></script> -->
-
-
   </body>
 </html>
