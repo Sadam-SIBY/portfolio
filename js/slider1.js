@@ -1,7 +1,11 @@
 
 const sliderImagesNames1 = [
-    "Legaloa.png",
-    "legaloa2.png",
+    "Accueil_Juridiq.png",
+    "section.png",
+    "search.png",
+    "result.png",
+
+
 ];
 
 const slider1 = document.querySelector('section.slider1');
