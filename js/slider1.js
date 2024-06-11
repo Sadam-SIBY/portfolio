@@ -3,8 +3,8 @@ const sliderImagesNames1 = [
     "home_juridiq.png",
     "search.png",
     "result.png",
-    "filtre.png",
     "doc_list.png",
+    "filtre.png",
     "art.png",
 ];
 
