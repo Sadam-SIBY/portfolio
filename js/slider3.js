@@ -1,6 +1,5 @@
 
 const sliderImagesNames3 = [
-    "AlloFlixAccueil.png",
     "AlloFlixShow.png",
     "AlloFlixFavoris.png",
     "AlloFlixAdd.png",

@@ -49,12 +49,11 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     font-family: 'Source Sans Pro', sans-serif;
-    background: var(--primary-color);
+    background: #f2f2f2;
 }
 
 a {
     text-decoration: none;
-    color: inherit
 }
 
 li {
@@ -187,7 +186,8 @@ textarea {
 .projects-container {
     max-width: 120rem;
     margin: 7rem auto 5rem;
-    width: 92%
+    width: 92%;
+
 }
 
 
@@ -351,6 +351,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10rem;
+
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -398,8 +399,14 @@ textarea {
 
 .about__link, a{
    text-align: center;
-
+   font-size: 1.7rem;
+   color: #23527c;
 }
+
+.about__link, a:hover{
+    text-decoration: underline;
+    color: #23527c;
+ }
 
 .projects__row {
     display: grid;
@@ -456,7 +463,7 @@ textarea {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start
+    align-items: flex-start;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -470,6 +477,10 @@ textarea {
     font-size: 2.8rem;
     margin-bottom: 2rem
 }
+.projects__row-content-title > a {
+   color: #23527c;
+   font-size: 1.2rem;
+}
 
 @media only screen and (max-width: 37.5em) {
     .projects__row-content-title {
@@ -478,13 +489,21 @@ textarea {
 }
 
 .projects__row-content-desc {
-    font-size: 1.8rem;
-    color: #666;
+    font-size: 1.5rem;
+    color: #333333;
     max-width: 60rem;
     line-height: 1.7;
-    margin-bottom: 3rem
-}
+    background-color: #ffffff;
+    padding: 1rem 1rem 1rem 1rem;
+    border: 1px solid #f2f2f2;
 
+}
+.projects__row-content-tech{
+    background-color: #8A8CF6;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
 @media only screen and (max-width: 37.5em) {
     .projects__row-content-desc {
         font-size:1.7rem
@@ -1080,7 +1099,7 @@ textarea {
 
 
 /* slider */
-.slider, .slider1 , .slider2 , .slider3 , .slider4  {
+.slider, .slider1 , .slider2 , .slider3 , .slider4, .slider5  {
     position: relative;
     height: 40rem;
     display: flex;
@@ -1109,7 +1128,7 @@ textarea {
     z-index: 1;
   }
 
-  .slider__btn,.slider1__btn, .slider2__btn,.slider3__btn, .slider4__btn{
+  .slider__btn,.slider1__btn, .slider2__btn,.slider3__btn, .slider4__btn, .slider5__btn{
     position: relative;
     z-index: 2;
     font-weight: bold;
@@ -1153,7 +1172,7 @@ textarea {
     height: auto;
   }
 
-  .slider__btn,.slider1__btn, .slider2__btn, .slider3__btn, .slider4__btn{
+  .slider__btn,.slider1__btn, .slider2__btn, .slider3__btn, .slider4__btn, .slider5__btn{
     background-color: #192a56;
     opacity: 0.8;
     border: 0;
@@ -1166,7 +1185,8 @@ textarea {
     margin-left: 1rem;
   }
 
-  .slider__btn:hover, .slider__btn:focus,.slider1__btn:hover, .slider1__btn:focus, .slider2__btn:hover, .slider2__btn:focus,.slider3__btn:hover, .slider3__btn:focus,.slider4__btn:hover, .slider4__btn:focus{
+  .slider__btn:hover, .slider__btn:focus,.slider1__btn:hover, .slider1__btn:focus, .slider2__btn:hover, .slider2__btn:focus,.slider3__btn:hover, .slider3__btn:focus,.slider4__btn:hover, .slider4__btn:focus, 
+  .slider5__btn:focus{
     background-color: #9d66f5;
     color: #fff;
   }
@@ -1180,12 +1200,12 @@ textarea {
 }
 
 @media only screen and (max-width: 37.5em) {
-    .slider,.slider1, .slider2,.slider3,.slider4 {
+    .slider,.slider1, .slider2,.slider3,.slider4, .slider5 {
         position: relative;
         height: 20rem;
       }
  
-      .slider__btn, .slider1__btn,.slider2__btn,.slider3__btn,.slider4__btn {
+      .slider__btn, .slider1__btn,.slider2__btn,.slider3__btn,.slider4__btn, .slider5__btn{
         padding: 0.3rem;
         background-color:#192a56;
         opacity: 0.6;
@@ -1194,7 +1214,8 @@ textarea {
          margin-left: 0.5rem;
 }
 
-.slider__btn:hover, .slider__btn:focus, .slider1__btn:hover, .slider1__btn:focus, .slider2__btn:hover, .slider2__btn:focus, .slider3__btn:hover, .slider3__btn:focus, .slider4__btn:hover, .slider4__btn:focus {
+.slider__btn:hover, .slider__btn:focus, .slider1__btn:hover, .slider1__btn:focus, .slider2__btn:hover, .slider2__btn:focus, .slider3__btn:hover, .slider3__btn:focus, .slider4__btn:hover, .slider4__btn:focus
+, .slider5__btn:hover, .slider5__btn:focus {
     background-color: #9d66f5;
     color: #fff;
 }

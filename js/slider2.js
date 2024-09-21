@@ -1,7 +1,6 @@
 
         const sliderImagesNames2 = [
             "oboulot.png",
-            "connexion.png",
             "profiloboulot.png",
             "bord.png",
             "classe.png",
