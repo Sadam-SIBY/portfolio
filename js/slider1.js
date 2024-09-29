@@ -1,13 +1,13 @@
 
 const sliderImagesNames1 = [
-    "accueil_Juridiq.png",
-    "actu.png",
-    "connexion_juridiq.png",
-    "inscription_juridiq.png",
-    "recherche.png",
-    "article_view.png",
-    "text_list.png",
-    "document_view.png",
+    "juridiq_home.png",
+    "juridiq_home2.png",
+    "juridiq_connexion.png",
+    "juridiq_search.png",
+    "juridiq_search_filter.png",
+    "juridiq_search_article.png",
+    "juridiq_filter.png",
+    "juridiq_text.png",
 ];
 
 const slider1 = document.querySelector('section.slider1');
