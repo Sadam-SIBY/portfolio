@@ -1,18 +1,11 @@
 
 const sliderImagesNames5 = [
-    "fresh-01.png",
-    "fresh-02-02.png",
-    "fresh-09.png",
-    "fresh-10.png",
-    "fresh-02.png",
-    "fresh-03.png",
-    "fresh-04.png",
-    "fresh-05.png",
-    "fresh-06.png",
-    "fresh-07.png",
-    "fresh-08.png",
-   
-
+    "home.png",
+    "search.png",
+    "article_view.png",
+    "doc_filter.png",
+    "view_doc.png",
+    "dashboard.png",
 ];
 
 const slider5 = document.querySelector('section.slider5');
